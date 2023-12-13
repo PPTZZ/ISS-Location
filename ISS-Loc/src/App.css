@@ -1,0 +1,39 @@
+.center{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+
+.earth{
+  grid-area: 1/5/1/7;
+  justify-self: center;
+}
+
+.position{
+  grid-area: 1/5/1/7;
+  justify-self: center;
+  align-self: center;
+  animation: rotation 80s linear infinite;
+}
+
+@keyframes rotation{
+  0%{
+    transform:rotate(0deg)
+              translate(-18vh)
+              rotate(0deg);
+
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-18vh)
+              rotate(-360deg);
+  }
+}
+
+.coordonartes{
+  grid-area: 2/3/2/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30vw;
+}
