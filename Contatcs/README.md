@@ -1,1 +1,0 @@
-A simple exercice that uses hooks to fetch an API and display data, it also has an auto update feature but due to using a free API it was disabled because it was reachihg the max amount of calls allowed prety soon.  
