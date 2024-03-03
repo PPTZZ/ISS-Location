@@ -13,17 +13,14 @@ const Tracker = ()=> {
                 .then((d) => setData(d))
                 .catch(err => console.log(err))
         }
-
-        // The commented part is  used to auto update the location but due to beeing 
-        // a free APi it soon reaches the max calls allowed.
         useEffect(() => {
-            // let timer = setInterval(()=>{
+            let timer = setInterval(()=>{
                 fetchInfo();
-            // }, 2000);
+            }, 3000);
 
-            // return ()=> {
-            //     clearInterval(timer);
-            // }
+            return ()=> {
+                clearInterval(timer);
+            }
         }, []);
         
 
